@@ -1,0 +1,12 @@
+diff -uprN squid3-3.4.8/src/ssl/gadgets.cc squid3-3.4.8-key-ueage/src/ssl/gadget
+s.cc
+--- squid3-3.4.8/src/ssl/gadgets.cc     2014-09-15 08:17:12.000000000 +0000
++++ squid3-3.4.8-key-ueage/src/ssl/gadgets.cc   2017-05-29 00:29:28.104000000 +0000
+@@ -258,7 +258,6 @@ static int
+ mimicExtensions(Ssl::X509_Pointer & cert, Ssl::X509_Pointer const & mimicCert)
+ {
+     static int extensions[]= {
+-        NID_key_usage,
+         NID_ext_key_usage,
+         NID_basic_constraints,
+         0
